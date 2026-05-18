@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/guestNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guest full name" />
+
+    <Button
+        android:id="@+id/createGuestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create guest" />
+
+    <Button
+        android:id="@+id/refreshGuestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh list"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/guestListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/disableEnableButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable / Enable selected" />
+
+    <Button
+        android:id="@+id/deleteGuestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete selected"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/guestStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
