@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Registration</title>
+    <link rel="stylesheet" href="/static/register.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Guest Face Registration</h1>
+      <p id="status">Checking your registration link…</p>
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" class="hidden"></canvas>
+      <div class="buttons">
+        <button id="startCamera">Start camera</button>
+        <button id="capture" disabled>Capture photo</button>
+        <button id="upload" disabled>Upload</button>
+      </div>
+      <img id="preview" alt="Face preview" class="hidden" />
+    </main>
+    <script>
+      window.REGISTRATION_TOKEN = "{{TOKEN}}";
+    </script>
+    <script src="/static/register.js"></script>
+  </body>
+</html>

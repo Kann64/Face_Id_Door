@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/doorStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Door: unknown"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/refreshStatusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh door status" />
+
+        <Button
+            android:id="@+id/unlockButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlock door"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/guestsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage guests"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/inviteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate invite link"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/notificationsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View notifications"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/actionResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inviteGuestIdField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guest ID" />
+
+    <Button
+        android:id="@+id/generateLinkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate one-time link" />
+
+    <Button
+        android:id="@+id/copyLinkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copy link"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/shareLinkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share link"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/inviteOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
